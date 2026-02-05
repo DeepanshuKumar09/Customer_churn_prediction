@@ -8,7 +8,7 @@
 
 **A deep learning-powered tool to predict customer attrition and enable proactive retention strategies.**
 
-[View Demo](#) · [Report Bug](#) · [Request Feature](#)
+[View Demo](https://customerchurnprediction001.streamlit.app/) · [Report Bug](#) · [Request Feature](#)
 
 </div>
 
