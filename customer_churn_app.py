@@ -6,10 +6,10 @@ from tensorflow.keras.models import load_model
 import pickle
 
 # 1. Load the pre-trained Keras model
-model = load_model('C:/Users/HP/Downloads/churn_model.h5')
+model = load_model('churn_model.h5')
 
 # 2. Load the StandardScaler object
-with open('C:/Users/HP/Downloads/scaler.pkl', 'rb') as f:
+with open('scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
 # 3. Set the title of the Streamlit application
@@ -60,4 +60,5 @@ if st.button('Predict Churn'):
         st.error(f'The customer is likely to churn. Probability: {prediction_probability:.2f}')
     else:
         st.success(f'The customer is not likely to churn. Probability: {prediction_probability:.2f}')
+
 
